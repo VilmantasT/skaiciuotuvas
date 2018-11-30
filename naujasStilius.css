@@ -1,16 +1,14 @@
-table, tr, td{
+
+table.table1{
     border: 1px solid black;
     border-collapse: collapse;
-}
-
-table{
     margin: auto;
     width: 350px;
     height: 500px;
 }
 
-td{
-    height: 30px;
+table.table1 tr td {
+    border: 1px solid black;
     font-size: 20px;
     text-align: center;
 }
@@ -25,38 +23,27 @@ td{
     background-color: dodgerblue;
 }
 
-#lygu{
+#lygu {
     background-color: orange;
 }
 
-td:hover{
-    background-color: lightgray;
-}
-
-.veiksmas:hover{
-    background-color: darkblue;
-}
-
-#lygu:hover{
-    background-color: darkorange;
-}
-
-#atsakymas{
-    margin-top: 100px;
+table.table2{
+    border: 1px solid blue;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 50px;
     width: 350px;
 }
 
-#atsakymas tr th{
-    background-color: blue;
-    height: 10px;
+table.table2 tr th{
     border: 1px solid black;
+    background-color: dodgerblue;
 
 }
 
-#atsakymas th, td{
-    height: 10px;
+table.table2 tr td{
+    border: 1px solid black;
+    text-align: center;
+
 }
 
-#sort:hover{
-    background-color: darkblue;
-}
