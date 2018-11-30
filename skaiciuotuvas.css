@@ -5,10 +5,26 @@ table, td, tr{
 
 table{
     margin: auto;
-    width: 50%;
-
+    width: 350px;
+    height: 500px;
 }
 
 td{
-    padding: 50px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#screen{
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+.veiksmas{
+    background-color: dodgerblue;
+}
+
+#lygu{
+    background-color: darkorange;
 }

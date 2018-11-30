@@ -6,25 +6,41 @@
     <link rel="stylesheet" type="text/css" href="skaiciuotuvas.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td colspan="4"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <td id="screen" colspan="4"></td>
+    </tr>
+    <tr>
+        <td onclick="addNumber('7')">7</td>
+        <td onclick="addNumber('8')">8</td>
+        <td onclick="addNumber('9')">9</td>
+        <td class="veiksmas" onclick="procedura('dalinti')">/</td>
+    </tr>
+    <tr>
+        <td onclick="addNumber('4')">4</td>
+        <td onclick="addNumber('5')">5</td>
+        <td onclick="addNumber('6')">6</td>
+        <td class="veiksmas" onclick="procedura('dauginti')">x</td>
+    </tr>
+    <tr>
+        <td onclick="addNumber('1')">1</td>
+        <td onclick="addNumber('2')">2</td>
+        <td onclick="addNumber('3')">3</td>
+        <td class="veiksmas" onclick="procedura('atimti')">-</td>
+    </tr>
+    <tr>
+        <td colspan="2" onclick="addNumber('0')">0</td>
+        <td onclick="addNumber('.')">.</td>
+        <td class="veiksmas" rowspan="2" onclick="procedura('sudeti')">+</td>
+    </tr>
+    <tr >
+        <td id="lygu" colspan="3" onclick="lygybe()">=</td>
+    </tr>
+</table>
 
-    <script src="skaiciuotuvas.js"></script>
+<div id="atsakymas"></div>
+
+<script src="skaiciuotuvas.js"></script>
 
 </body>
 </html>
