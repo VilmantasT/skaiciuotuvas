@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="skaiciuotuvas.css">
 </head>
 <body>
-<table>
+<table class="skaiciuotuvas">
     <tr>
         <td id="screen" colspan="4"></td>
     </tr>
@@ -14,31 +14,33 @@
         <td onclick="addNumber('7')">7</td>
         <td onclick="addNumber('8')">8</td>
         <td onclick="addNumber('9')">9</td>
-        <td class="veiksmas" onclick="procedura('dalinti')">/</td>
+        <td class="veiksmas" onclick="procedura('/')">/</td>
     </tr>
     <tr>
         <td onclick="addNumber('4')">4</td>
         <td onclick="addNumber('5')">5</td>
         <td onclick="addNumber('6')">6</td>
-        <td class="veiksmas" onclick="procedura('dauginti')">x</td>
+        <td class="veiksmas" onclick="procedura('*')">x</td>
     </tr>
     <tr>
         <td onclick="addNumber('1')">1</td>
         <td onclick="addNumber('2')">2</td>
         <td onclick="addNumber('3')">3</td>
-        <td class="veiksmas" onclick="procedura('atimti')">-</td>
+        <td class="veiksmas" onclick="procedura('-')">-</td>
     </tr>
     <tr>
         <td colspan="2" onclick="addNumber('0')">0</td>
         <td onclick="addNumber('.')">.</td>
-        <td class="veiksmas" rowspan="2" onclick="procedura('sudeti')">+</td>
+        <td class="veiksmas" rowspan="2" onclick="procedura('+')">+</td>
     </tr>
     <tr >
         <td id="lygu" colspan="3" onclick="lygybe()">=</td>
     </tr>
 </table>
 
-<div id="atsakymas"></div>
+<div>
+    <table id="atsakymas"></table>
+</div>
 
 <script src="skaiciuotuvas.js"></script>
 

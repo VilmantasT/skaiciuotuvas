@@ -26,5 +26,33 @@ td{
 }
 
 #lygu{
+    background-color: orange;
+}
+
+td:hover{
+    background-color: lightgray;
+}
+
+.veiksmas:hover{
+    background-color: darkblue;
+}
+
+#lygu:hover{
     background-color: darkorange;
+}
+
+#atsakymas{
+    margin-top: 100px;
+    width: 350px;
+}
+
+#atsakymas tr th{
+    background-color: blue;
+    height: 10px;
+    border: 1px solid black;
+
+}
+
+#atsakymas tr td{
+    height: 10px;
 }
