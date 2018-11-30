@@ -32,16 +32,24 @@ function lygybe() {
         atsakymas = Number(skaicius1) / Number(skaicius2);
     }
     document.getElementById('screen').innerHTML = atsakymas;
-    if (lentele.length == 0) {
-        lentele += '<tr><th>A</th><th>Veiksmas</th><th>B</th><th>=</th></tr>';
-        lentele += '<tr><td>' +skaicius1 + '</td><td>' + veiksmas + '</td><td>' + skaicius2 + '</td><td>' + atsakymas + '</td></tr>';
-    }else{
-        lentele += '<tr><td>' +skaicius1 + '</td><td>' + veiksmas + '</td><td>' + skaicius2 + '</td><td>' + atsakymas + '</td></tr>';
-    }
+    piestiLentele(veiksmas, skaicius1, skaicius2, atsakymas)
 
-    document.getElementById('atsakymas').innerHTML = lentele;
     skaicius1 = '';
     skaicius2 = '';
     atsakymas = 0;
     veiksmas = '';
+}
+
+function piestiLentele(v, sk1, sk2, ats) {
+    if (lentele.length == 0) {
+        lentele += '<tr><th>A</th><th>Veiksmas</th><th>B</th><th id="sort" onclick="sorting()">=</th></tr>';
+        lentele += '<tr><td>' + sk1 + '</td><td>' + v + '</td><td>' + sk2 + '</td><td>' + ats + '</td></tr>';
+    }else{
+        lentele += '<tr><td>' +skaicius1 + '</td><td>' + veiksmas + '</td><td>' + skaicius2 + '</td><td>' + ats + '</td></tr>';
+    }
+    document.getElementById('atsakymas').innerHTML = lentele;
+
+}
+function sorting() {
+    console.log('sorting responsive')
 }

@@ -1,4 +1,4 @@
-table, td, tr{
+table, tr, td{
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -53,6 +53,10 @@ td:hover{
 
 }
 
-#atsakymas tr td{
+#atsakymas tr, th, td{
     height: 10px;
+}
+
+#sort:hover{
+    background-color: darkblue;
 }
