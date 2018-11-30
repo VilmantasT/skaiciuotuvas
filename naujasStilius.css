@@ -27,6 +27,21 @@ table.table1 tr td {
     background-color: orange;
 }
 
+table.table1 td:hover{
+    background-color: lightgray;
+}
+
+table.table1 td.veiksmas:hover{
+    background-color: darkblue;
+}
+
+table.table1 #lygu:hover{
+    background-color: darkorange;
+}
+
+
+
+
 table.table2{
     border: 1px solid blue;
     border-collapse: collapse;
